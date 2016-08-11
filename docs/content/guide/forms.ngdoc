@@ -27,7 +27,7 @@ for other directives to augment its behavior.
     <div ng-controller="ExampleController">
       <form novalidate class="simple-form">
         Name: <input type="text" ng-model="user.name" /><br />
-        E-mail: <input type="email" ng-model="user.email" /><br />
+        E-mail: <input type="text" ng-model="user.email" /><br />
         Gender: <input type="radio" ng-model="user.gender" value="male" />male
         <input type="radio" ng-model="user.gender" value="female" />female<br />
         <input type="button" ng-click="reset()" value="Reset" />
@@ -89,7 +89,7 @@ and failing to satisfy its validity.
     <div ng-controller="ExampleController">
       <form novalidate class="css-form">
         Name: <input type="text" ng-model="user.name" required /><br />
-        E-mail: <input type="email" ng-model="user.email" required /><br />
+        E-mail: <input type="text" ng-model="user.email" required /><br />
         Gender: <input type="radio" ng-model="user.gender" value="male" />male
         <input type="radio" ng-model="user.gender" value="female" />female<br />
         <input type="button" ng-click="reset()" value="Reset" />
